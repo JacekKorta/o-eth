@@ -15,6 +15,7 @@ class CountryMapper(Enum):
     Greece = "Text To Translate to - el"
     Hungary = "Text To Translate to - hu"
     Iceland = "Text To Translate to - is"
+    India = "Text To Translate to - hi"
     Italy = "Text To Translate to - it"
     Japan = "Text To Translate to - ja"
     Kazakhstan = "Text To Translate to - kk"
@@ -52,6 +53,7 @@ COUNTRY_LIST = [
     "Hungary",
     "Iceland",
     "Italy",
+    "India",
     "Japan",
     "Kazakhstan",
     "Korea",
