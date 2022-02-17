@@ -11,7 +11,12 @@ def main():
         if translation_language := get_translation_language(filename):
             header_value = CountryMapper[translation_language].value
             header_column_name = find_column(settings.result_filename, header_value)
-            copy_column(filename, settings.result_filename, header_column_name, settings.work_dir)
+            if all([filename, settings.result_filename, header_column_name, settings.work_dir]):
+                copy_column(
+                    filename, settings.result_filename, header_column_name, settings.work_dir
+                )
+            else:
+                print(filename, settings.result_filename, header_column_name, settings.work_dir)
 
 
 if __name__ == "__main__":
